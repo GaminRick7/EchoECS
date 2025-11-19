@@ -11,6 +11,10 @@ namespace math
         Vec4 operator+(const Vec4& o) const{ return {x + o.x, y + o.y, z + o.z, w + o.w}; }
         Vec4 operator-(const Vec4& o) const{ return {x - o.x, y - o.y, z - o.z, w - o.w}; }
         Vec4 operator*(float o) const{ return {x * o, y * o, z * o, w * o}; }
+        float& operator[](int i)
+        {
+
+        };
 
         float dot(const Vec4& o) const{ return x * o.x + y * o.y + z * o.z + w * o.w; }
 
